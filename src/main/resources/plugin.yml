@@ -1,0 +1,9 @@
+name: RegisterSystem
+author: CapitainFoxy
+version: 1.0
+main: com.capitainfoxy.Main
+commands:
+  register:
+    description: Registers a new user.
+  login:
+    description: Logs in an existing user.
