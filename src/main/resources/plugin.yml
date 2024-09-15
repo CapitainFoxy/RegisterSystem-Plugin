@@ -1,6 +1,5 @@
 name: RegisterSystem
 author: CapitainFoxy
-version: 1.0
 main: com.capitainfoxy.Main
 commands:
   register:
