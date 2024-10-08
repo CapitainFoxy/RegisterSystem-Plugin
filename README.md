@@ -4,12 +4,6 @@
 
 The **RegisterSystem** plugin is a simple registration and login system for Minecraft servers using the Bukkit API. This plugin allows players to register with a username and password, and log in using those credentials. Player data is stored securely in an SQLite database within the server files.
 
-## Features
-
-- Players can register with a username and password using the `/register` command.
-- Players can log in with their credentials using the `/login` command.
-- Data is stored in a local SQLite database (`users.db`), ensuring persistence across server restarts.
-- Simple and lightweight, making it easy to set up on any Bukkit-based server.
 
 ## Requirements
 
