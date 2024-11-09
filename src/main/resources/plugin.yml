@@ -3,6 +3,6 @@ author: CapitainFoxy
 main: com.capitainfoxy.Main
 commands:
   register:
-    description: Registers a new user.
+    description: Regisztral egy uj felhasznalot
   login:
-    description: Logs in an existing user.
+    description: Bejelentkezes
