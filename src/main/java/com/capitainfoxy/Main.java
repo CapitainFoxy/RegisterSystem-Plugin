@@ -1,11 +1,7 @@
 package com.capitainfoxy;
-
 import org.bukkit.plugin.java.JavaPlugin;
-
 public class Main extends JavaPlugin {
-
     private DatabaseManager databaseManager;
-
     @Override
     public void onEnable() {
         getLogger().info("RegisterSystem plugin enabled!");
@@ -14,7 +10,6 @@ public class Main extends JavaPlugin {
         this.getCommand("register").setExecutor(new RegisterCommand(databaseManager));
         this.getCommand("login").setExecutor(new LoginCommand(databaseManager));
     }
-
     @Override
     public void onDisable() {
         getLogger().info("RegisterSystem plugin disabled.");
