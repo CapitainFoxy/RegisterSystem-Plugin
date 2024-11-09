@@ -1,22 +1,16 @@
 package com.capitainfoxy;
-
 import org.bukkit.plugin.Plugin;
-
 import java.sql.Connection;
 import java.sql.DriverManager;
 import java.sql.PreparedStatement;
 import java.sql.SQLException;
 import java.sql.ResultSet;
-
 public class DatabaseManager {
-
     private Connection connection;
     private Plugin plugin;
-
     public DatabaseManager(Plugin plugin) {
         this.plugin = plugin;
     }
-
     public void initializeDatabase() {
         try {
             connection = DriverManager.getConnection("jdbc:sqlite:" + plugin.getDataFolder() + "/users.db");
@@ -30,7 +24,6 @@ public class DatabaseManager {
             e.printStackTrace();
         }
     }
-
     public boolean registerUser(String username, String password) {
         try {
             PreparedStatement statement = connection.prepareStatement("INSERT INTO users (username, password) VALUES (?, ?)");
@@ -44,7 +37,6 @@ public class DatabaseManager {
             return false;
         }
     }
-
     public boolean loginUser(String username, String password) {
         try {
             PreparedStatement statement = connection.prepareStatement("SELECT password FROM users WHERE username = ?");
